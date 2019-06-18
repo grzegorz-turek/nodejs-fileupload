@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Node.js exercise - file upload server">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>File upload server</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <h1>Wgraj plik</h1>
+        <form action="/upload" enctype="multipart/form-data" method="post">
+            <label>Tytuł pliku</label>
+            <input type="text" name="title">
+            <br>
+            <label>Plik</label>
+            <input type="file" name="upload" multiple="multiple"><br>
+            <input type="submit" value="Wyślij">
+        </form>
+        <!--
+        <script src="js/script.js"></script>
+        -->
+    </body>
+</html>
